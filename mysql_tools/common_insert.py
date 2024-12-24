@@ -24,8 +24,8 @@ if __name__ == "__main__":
     table = "user_cloud_keys"  # 插入的表名
     # 插入操作
     insert_data = [
-        {"user_id": 1, "cloud_provider": "Tencent", "secret_id": "120", "secret_key": "120"},
-        {"user_id": 1, "cloud_provider": "AWS", "secret_id": "110", "secret_key": "110"}
+        {"user_id": 1, "cloud_provider": "AWS", "secret_id": "120", "secret_key": "120"}
+        # {"user_id": 1, "cloud_provider": "AWS", "secret_id": "110", "secret_key": "110"}
     ]
     insert_sql = build_insert_sql(table, insert_data)
     print("构建的 INSERT SQL:", insert_sql)
